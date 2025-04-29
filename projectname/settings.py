@@ -30,12 +30,16 @@ import os
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
 
 # Debug mode (ensure it's set to True in development)
-DEBUG = True
+DEBUG = False
 
 # Allowed hosts (adjust for production)
-ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ['*']
 
 
 # Quick-start development settings - unsuitable for production
@@ -45,9 +49,8 @@ ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 SECRET_KEY = 'django-insecure-qw#m+!o9w^&o-^)wlv&t^4%#)sy!xo3ebe13_jmercq$rkow83'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
+
 
 
 # Application definition
